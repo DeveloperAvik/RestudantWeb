@@ -1,0 +1,228 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+:root {
+    --primary: #C9AB66;
+    --text: #404040;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+/* Defaults */
+
+.section_title {
+    font-size: 46px;
+}
+
+.section_s_title {
+    font-family: 'Kristi', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, rgba(202, 172, 102, 0.59) 0%, rgba(250, 233, 177, 0.35) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 46px;
+    margin-bottom: -30px;
+}
+
+.app_btn {
+    background: #CAAC66;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid var(--primary);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    font-weight: 500;
+}
+.app_btn:hover{
+    background: transparent;
+    color: var(--primary);
+    text-decoration: none;
+}
+.app_btn_transparent{
+    background: transparent;
+    color: var(--primary);
+}
+.app_btn_transparent:hover{
+    background: #CAAC66;
+    color: #fff;
+}
+/* Header */
+.header {
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+}
+section{
+    padding: 70px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* hero */
+.hero {
+    background: url('../img/header_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero_content{
+    max-width: 700px;
+    margin: auto;
+}
+.hero_content h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.hero_content p {
+    font-size: 18px;
+    color: var(--primary);
+}
+
+/* about */
+.about_content{
+    padding-right: 30px;
+    margin-top: 100px;
+}
+.about_content p{
+    font-size: 18px;
+}
+.about_video{
+    position: relative;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+}
+.menus{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -50px;
+    position: relative;
+    z-index: 336;
+    justify-content: center;
+}
+.menu{
+    margin-right: 40px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.menu img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.menu p{
+    position: absolute;
+    bottom: 7px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.699);
+}
+
+
+/* lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.lightbox_content{
+    width: 80%;
+}
+.lightbox_content video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.lightbox_show{
+    display: flex;
+}
